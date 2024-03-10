@@ -33,8 +33,67 @@
 ## Servidor PHP
 ## Servidor WEB
 
-# Exemplo de Uso
-## Cadastrar novo usuário
+# Exemplo de Uso e Funcionalidades
+## Página principal do site (Home)
+
+Home da aplicação, com opções de cadastro, login e FAQ.
+
+![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/3ad10bea-23c7-400c-9eda-e18956ccb0a2)
+
+## Cadastro de Usuário
+
+Implementação de formulário para cadastro de novos usuários, com inserção dos novos usuários do banco de dados.
+
+![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/dde58aaf-0b46-47bb-80c0-268b2cea53f8)
+
 ## Login
+Para usuários já cadastrados, foi criado uma tela de login para entrar na aplicação.
+
+![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/eb92fcf5-95e2-4d6d-8b32-658ec9595998)
+
+## Tela do usuário
+Após efetuado o login, o usuário é direcionado para a tela principal da aplicação.
+
+![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/e6470fcc-81e8-4250-96be-6e40c83bf749)
+
+Na tela principal da aplicação, há diversos menus com diferentes funcionalidades da aplicação.
+
+* Início
+
+No menu Início, é possível visualizar os lançamentos recentes, e também as principais métricas, como por exemplo: total de movimentações, transações totais, total gasto no dia atual e o valor em conta.
+
+* Despesas
+
+Na tela de despesas, são exibidas as principais despesas lançadas pelo usuário. É possível adicionar novas despesas e excluir despesas previamente lançadas.
+
+![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/38f48c9f-e976-4784-9ca7-23898089cc5e)
+![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/cdda8e33-ec05-44f9-aba7-7fb25381201c)
+
+* Limite de Gastos
+
+Esta tela será implementada futuramente permitindo que o usuário defina limites de gastos para a categoria desejada, permitindo assim que o usuário tenha um melhor controle da sua vida financeira.
+
+* Extrato
+
+Esta tela será implementada futuramente, com o extrato total do usuário dos últimos dias.
+
+* AI Financeira
+
+Neste menu, será implementado uma inteligência artificial para ajudar os usuários com diversas dicas financeiras. O usuário poderá interagir com o bot por meio de perguntas, e receber diversas dicas que serão formuladas pela inteligência artificial.
+
+![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/566d8814-3820-4982-915a-5584715a1d01)
+
+* Configurações
+
+Esta tela será implementada futuramente, permitindo que o usuário altere as configurações da plataforma de acordo com seu gosto pessoal.
+
+* Sair
+
+Usuário efetua o logout da plataforma.
+
+
+
+
+
 
 
