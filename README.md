@@ -38,18 +38,19 @@
 
 Home da aplicação, com opções de cadastro, login e FAQ.
 
-![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/3ad10bea-23c7-400c-9eda-e18956ccb0a2)
+![PaginaInicial](gifs_readme/pagina_inicial.gif)
+
 
 ## Cadastro de Usuário
 
 Implementação de formulário para cadastro de novos usuários, com inserção dos novos usuários do banco de dados.
 
-![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/dde58aaf-0b46-47bb-80c0-268b2cea53f8)
+![Cadastro](gifs_readme/cadastro.gif)
 
 ## Login
 Para usuários já cadastrados, foi criado uma tela de login para entrar na aplicação.
 
-![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/eb92fcf5-95e2-4d6d-8b32-658ec9595998)
+![PaginaInicial](gifs_readme/login.gif)
 
 ## Tela do usuário
 Após efetuado o login, o usuário é direcionado para a tela principal da aplicação.
@@ -90,6 +91,8 @@ Esta tela será implementada futuramente, permitindo que o usuário altere as co
 * Sair
 
 Usuário efetua o logout da plataforma.
+
+![PaginaInicial](gifs_readme/sair.gif)
 
 
 
