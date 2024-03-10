@@ -2,7 +2,7 @@
 
 function criarConexao() {
 
-    $conexao = mysqli_connect('127.0.0.1', 'root', '12345678', 'pi-db');
+    $conexao = mysqli_connect('localhost','root','12345678','pi-db');
     return $conexao;
 }
 

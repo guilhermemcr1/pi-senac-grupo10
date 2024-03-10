@@ -1,9 +1,8 @@
 <?php
 
-//require_once 'funcoes.php';
+require_once 'funcoes.php';
 
-//$conexao = criarConexao();
-
+$conexao = criarConexao();
 
 
 $nome = $_POST['nome'];
@@ -12,6 +11,18 @@ $email = $_POST['email'];
 $data_nascimento = $_POST['datanasc'];
 $senha = md5($_POST['senha']);
 
+
+
+$sql_verifica = "select cpf from usuario where cpf =$cpf";
+$sql_verifica_email = "select email from usuario where email ='$email'";
+
+
+$verifica_usuario = mysqli_query($conexao, $sql_verifica);
+$verifica_usuario= mysqli_num_rows($verifica_usuario); 
+
+
+$verifica_usuario_email = mysqli_query($conexao, $sql_verifica_email);
+$verifica_usuario_email= mysqli_num_rows($verifica_usuario_email); 
 
 
 
@@ -29,10 +40,11 @@ if($verifica_usuario_email != 0){
 
 }else{
 
-    $sql = "insert into usuario(nome,senha,data_nascimento,senha) values
-         ('$nome',$senha,'$data_nascimento','$cpf')";
+    $sql = "insert into usuario(nome,senha,data_nascimento,cpf,email) values
+         ('$nome','$senha','$data_nascimento','$cpf','$email')";
 }
 
+$gravado = mysqli_query($conexao, $sql);
 
 if ($gravado == true) {
     echo"<script language='javascript' type='text/javascript'>
@@ -44,3 +56,4 @@ if ($gravado == true) {
         .href='editar-admin.php';</script>";
     die();
 }
+mysqli_close($conexao);
