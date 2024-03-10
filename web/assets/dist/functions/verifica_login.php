@@ -4,5 +4,5 @@ require_once 'funcoes.php';
  
 if (!isLoggedIn())
 {
-    header('Location:../../../view/login.html');
+    header('Location:../view/login.html');
 }

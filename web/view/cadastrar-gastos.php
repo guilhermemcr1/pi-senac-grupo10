@@ -13,20 +13,27 @@ require '../assets/dist/functions/verifica_login.php';
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinAI</title>
+
+    <title>Finai | Adicionar Gastos</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/dist/css/ia-page.css" />
-
+    <link rel="stylesheet" href="../assets/dist/css/home.css" />
+    <link rel="stylesheet" href="../assets/dist/css/cadastrar-gastos.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Booststrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    
 </head>
 <body>
     <!-- =============== Navigation ================ -->
@@ -43,7 +50,7 @@ require '../assets/dist/functions/verifica_login.php';
             </li>
   
             <li>
-              <a href="inicio.php">
+              <a href="#">
                 <span class="icon">
                  <i class="bi bi-house"></i>
                 </span>
@@ -79,7 +86,7 @@ require '../assets/dist/functions/verifica_login.php';
             </li>
   
             <li>
-              <a href="#">
+              <a href="ai-financeira.php">
                 <span class="icon">
                   <i class="bi bi-coin"></i>
                 </span>
@@ -106,6 +113,7 @@ require '../assets/dist/functions/verifica_login.php';
             </li>
           </ul>
         </div>
+  
 
         <!-- ========================= Main ==================== -->
         <div class="main">
@@ -114,35 +122,42 @@ require '../assets/dist/functions/verifica_login.php';
                 <ion-icon name="menu-outline"></ion-icon>
               </div>
     
-              <div class="search">
-                <label>
-                  <input type="text" placeholder="Busque informações aqui" />
-                  <ion-icon name="search-outline"></ion-icon>
-                </label>
-              </div>
     
               <div class="user">
                 <img src="../assets/dist/img/customer01.jpg" alt="" />
               </div>
             </div>
 
-            <main>
-                <section id="chat">
-                    <div id="mensagens" class="chat-box">
-                        <!-- Aqui serão exibidas as mensagens do chat -->
-                        <div class="chat-message received">
-                            <p>Olá, como posso te ajudar hoje? </p>
-                        </div>
-                        <div class="chat-message sent">
-                            <p>Gostaria de receber dicas de economia?</p>
-                        </div>
+            <!-- Formulário centralizado -->
+            <div class="form-container">
+                <form action="../assets/dist/functions/adicionar-gastos.php" method="POST">
+                    <h2>Adicionar Gastos</h2>
+                    <div class="form-group">
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" id="descricao" name="descricao" required>
                     </div>
-                    <div id="enviar-mensagem" class="user-input">
-                        <input type="text" id="texto-mensagem" placeholder="Digite sua mensagem">
-                        <button id="botao-enviar">Enviar</button>
+                    <div class="form-group">
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor" name="valor" required>
                     </div>
-                </section>
-            </main>
+                    <div class="form-group">
+                        <label for="data">Data da Despesa</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria:</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="Alimentacao">Alimentação</option>
+                            <option value="Transporte">Transporte</option>
+                            <option value="Lazer">Lazer</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Adicionar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -150,7 +165,13 @@ require '../assets/dist/functions/verifica_login.php';
     <script src="../assets/dist/js/main.js"></script>
 
     <!-- ====== ionicons ======= -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 </body>
 </html>

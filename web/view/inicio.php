@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+
+require_once '../assets/dist/functions/funcoes.php';
+require '../assets/dist/functions/verifica_login.php';
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -5,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>FinAI</title>
+    <title>FinAI | Bem-vindo</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/dist/css/home.css" />

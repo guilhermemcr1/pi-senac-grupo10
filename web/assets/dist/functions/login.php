@@ -41,8 +41,9 @@ $logar = $_POST['logar'];
             session_start();
             $_SESSION['logged_in'] = true;
             $_SESSION['id_usuario'] = $id_usuario;
+
     
-            header("Location:../../../view/index-gastos.php");
+            header("Location:../../../view/inicio.php");
         }
     }
     mysqli_close($conexao);

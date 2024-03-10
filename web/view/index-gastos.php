@@ -1,8 +1,9 @@
 <?php
 session_start();
 
+
 require_once '../assets/dist/functions/funcoes.php';
-//require '../assets/dist/functions/verifica_login.php';
+require '../assets/dist/functions/verifica_login.php';
 
 
 ?>
@@ -14,7 +15,7 @@ require_once '../assets/dist/functions/funcoes.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>FinAI</title>
+    <title>FinAi | Despesas</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/dist/css/home.css" />
@@ -58,7 +59,7 @@ require_once '../assets/dist/functions/funcoes.php';
           </li>
 
           <li>
-            <a href="#">
+            <a href="inicio.php">
               <span class="icon">
                <i class="bi bi-activity"></i>
               </span>
@@ -139,16 +140,17 @@ require_once '../assets/dist/functions/funcoes.php';
           <div class="recentOrders">
             <div class="cardHeader">
               <h2>Despesas</h2>
-              <a href="adicionar-despesa.php" class="btn">Adicionar Despesa</a>
+              <a href="cadastrar-gastos.php" class="btn">Adicionar Despesa</a>
             </div>
 
             <table>
               <thead>
                 <tr>
                   <td>Titulo</td>
-                  <td>Valor</td>
                   <td>Data</td>
+                  <td>Valor</td>
                   <td>Categoria</td>
+                  <td>Ações</td>
                 </tr>
               </thead>
               <?php
@@ -156,28 +158,22 @@ require_once '../assets/dist/functions/funcoes.php';
                                     require_once '../assets/dist/functions/funcoes.php';
 
                                     $conexao = criarConexao();
-                                   
-                                    $sql = "SELECT * FROM despesas WHERE id_usuario = $id_usuario";
-
-                                    echo($sql);
-                                    die();
-
+                                    
+                                    $sql = "SELECT * FROM despesas";                                  
 
                                     $resultado = mysqli_query($conexao, $sql);
                                     $gastos = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
                                     require_once 'index-gastos.php';
                                     mysqli_close($conexao);
 
-                                    foreach ($usuarios as $usuario) {
+                                    foreach ($gastos as $gasto) {
                                         echo "<tr>";
-                                        echo "<td>" . $usuario['email'] . "</td>";
-                                        echo "<td>" . $usuario['nome'] . "</td>";
-                                        echo "<td>" . $usuario['cpf'] . "</td>";
-                                        echo "<td>" . $usuario['telefone'] . "</td>";
-                                        echo "<td>" . $usuario['senha'] . "</td>";
-                                        if ($usuario['id_unico'] != 1) {
-                                        echo "<td><a href='excluir-admin.php?id_unico=" . $usuario['id_unico'] . "'>Deletar</a></td>";
-                                        }
+                                        echo "<td>" . $gasto['titulo'] . "</td>";
+                                        echo "<td>" . $gasto['data'] . "</td>";
+                                        echo "<td> R$ " . $gasto['valor'] . "</td>";
+                                        echo "<td>" . $gasto['categoria'] . "</td>";
+                                        echo "<td><a href='../assets/dist/functions/excluir-gastos.php?id_despesas=" . $gasto['id_despesas'] . "'>Deletar</a></td>";
+                                        echo "</tr>";   
                                     }
                                     ?>
               
