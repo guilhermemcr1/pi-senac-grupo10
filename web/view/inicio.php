@@ -1,12 +1,3 @@
-<?php
-session_start();
-
-require_once '../assets/dist/functions/funcoes.php';
-//require '../assets/dist/functions/verifica_login.php';
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -40,7 +31,7 @@ require_once '../assets/dist/functions/funcoes.php';
       <div class="navigation">
         <ul>
           <li>
-            <a href="inicio.php">
+            <a href="#">
               <span class="logo">
                 <img src="../assets/dist/img/logofinAI.png" alt=" Logo">
               </span>
@@ -49,7 +40,7 @@ require_once '../assets/dist/functions/funcoes.php';
           </li>
 
           <li>
-            <a href="inicio.php">
+            <a href="#">
               <span class="icon">
                <i class="bi bi-house"></i>
               </span>
@@ -58,7 +49,7 @@ require_once '../assets/dist/functions/funcoes.php';
           </li>
 
           <li>
-            <a href="#">
+            <a href="index-gastos.php">
               <span class="icon">
                <i class="bi bi-activity"></i>
               </span>
@@ -132,55 +123,128 @@ require_once '../assets/dist/functions/funcoes.php';
           </div>
         </div>
 
-       
+        <!-- ======================= Cards ================== -->
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,504</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+
+            <div class="iconBx">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Sales</div>
+            </div>
+
+            <div class="iconBx">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">284</div>
+              <div class="cardName">Comments</div>
+            </div>
+
+            <div class="iconBx">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">$7,842</div>
+              <div class="cardName">Earning</div>
+            </div>
+
+            <div class="iconBx">
+              <ion-icon name="cash-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
 
         <!-- ================ Order Details List ================= -->
         <div class="details">
           <div class="recentOrders">
             <div class="cardHeader">
-              <h2>Despesas</h2>
-              <a href="adicionar-despesa.php" class="btn">Adicionar Despesa</a>
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn">View All</a>
             </div>
 
             <table>
               <thead>
                 <tr>
-                  <td>Titulo</td>
-                  <td>Valor</td>
-                  <td>Data</td>
-                  <td>Categoria</td>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
                 </tr>
               </thead>
-              <?php
-                                    // codigo inserido do editar-aluno-func.php
-                                    require_once '../assets/dist/functions/funcoes.php';
 
-                                    $conexao = criarConexao();
-                                   
-                                    $sql = "SELECT * FROM despesas WHERE id_usuario = $id_usuario";
+              <tbody>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
 
-                                    echo($sql);
-                                    die();
+                <tr>
+                  <td>Dell Laptop</td>
+                  <td>$110</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
 
+                <tr>
+                  <td>Apple Watch</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
 
-                                    $resultado = mysqli_query($conexao, $sql);
-                                    $gastos = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
-                                    require_once 'index-gastos.php';
-                                    mysqli_close($conexao);
+                <tr>
+                  <td>Addidas Shoes</td>
+                  <td>$620</td>
+                  <td>Due</td>
+                  <td><span class="status inProgress">In Progress</span></td>
+                </tr>
 
-                                    foreach ($usuarios as $usuario) {
-                                        echo "<tr>";
-                                        echo "<td>" . $usuario['email'] . "</td>";
-                                        echo "<td>" . $usuario['nome'] . "</td>";
-                                        echo "<td>" . $usuario['cpf'] . "</td>";
-                                        echo "<td>" . $usuario['telefone'] . "</td>";
-                                        echo "<td>" . $usuario['senha'] . "</td>";
-                                        if ($usuario['id_unico'] != 1) {
-                                        echo "<td><a href='excluir-admin.php?id_unico=" . $usuario['id_unico'] . "'>Deletar</a></td>";
-                                        }
-                                    }
-                                    ?>
-              
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+
+                <tr>
+                  <td>Dell Laptop</td>
+                  <td>$110</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+
+                <tr>
+                  <td>Apple Watch</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+
+                <tr>
+                  <td>Addidas Shoes</td>
+                  <td>$620</td>
+                  <td>Due</td>
+                  <td><span class="status inProgress">In Progress</span></td>
+                </tr>
+              </tbody>
             </table>
           </div>
 

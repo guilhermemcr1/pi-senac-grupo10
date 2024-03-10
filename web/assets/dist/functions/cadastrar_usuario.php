@@ -54,11 +54,11 @@ $gravado = mysqli_query($conexao, $sql);
 if ($gravado == true) {
     echo"<script language='javascript' type='text/javascript'>
     alert('Cadastro efetuado com sucesso, redirecionando para o Login!');window.location
-    .href='./../../view/login.html';</script>";
+    .href='../../../view/login.html';</script>";
 } else {
     echo"<script language='javascript' type='text/javascript'>
         alert('Verifique os dados digitados!');window.location
-        .href='./../../view/cadastro.html';</script>";
+        .href='../../../view/cadastro.html';</script>";
     die();
 }
 mysqli_close($conexao);

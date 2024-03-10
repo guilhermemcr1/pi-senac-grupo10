@@ -30,19 +30,19 @@ $logar = $_POST['logar'];
                 die();
         }else {
     
-            $idusuario = "SELECT id_usuario FROM usuario WHERE email = '$email'";
-            $idDb = mysqli_query($conexao, $idusuario);
-            $iduser = mysqli_fetch_all($idDb, MYSQLI_ASSOC);
-            foreach ($iduser as $id_usuario) {
-                $id_usuario = $id_usuario['id_usuario'];
+            $nomeusuario = "SELECT id_usuario FROM usuario WHERE email = '$email'";
+            $nomeDb = mysqli_query($conexao, $nomeusuario);
+            $idUser = mysqli_fetch_all($nomeDb, MYSQLI_ASSOC);
+            foreach ($idUser as $id_usuario) {
+            $idUser = $id_usuario['id_usuario'];
             }
     
+   
             session_start();
             $_SESSION['logged_in'] = true;
-            $_SESSION['user_name'] = $nome;
             $_SESSION['id_usuario'] = $id_usuario;
     
-            header("Location:index-gastos.php");
+            header("Location:../../../view/index-gastos.php");
         }
     }
     mysqli_close($conexao);
