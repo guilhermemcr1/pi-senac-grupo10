@@ -67,8 +67,7 @@ No menu Início, é possível visualizar os lançamentos recentes, e também as 
 
 Na tela de despesas, são exibidas as principais despesas lançadas pelo usuário. É possível adicionar novas despesas e excluir despesas previamente lançadas.
 
-![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/38f48c9f-e976-4784-9ca7-23898089cc5e)
-![image](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/46868956/cdda8e33-ec05-44f9-aba7-7fb25381201c)
+![PaginaInicial](gifs_readme/adicionar_despesa.gif)
 
 * Limite de Gastos
 
