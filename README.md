@@ -1,17 +1,10 @@
 # Índice
 * [Detalhes do Projeto](#detalhes-do-projeto)
 * [Integrantes](#integrantes)
+* [Prova de Conceito](#prova-de-conceito)
+* [Ambiente de Desenvolvimento](#ambiente-de-desenvolvimento)
 * [Execução do Projeto](#execução-do-projeto)
-* [Exemplo de Uso](#exemplo-de-uso)
-
-<p align="center">
-  <img src= "https://github.com/guilhermemcr1/pi-senac-grupo10/assets/44147193/0404d674-46dd-4e62-a41f-8bed635791ad">
-</p>
-
-<h1 align="center"> 
-   Aplicativo Financeiro Web FinAI 
-</h1>
-
+* [Exemplo de Uso e Funcionalidades](#exemplo-de-uso-e-funcionalidades)
 
 # Detalhes do Projeto
  * Instituição:  Centro Universitrário SENAC – Santo Amaro.
@@ -28,10 +21,30 @@
 - Johnny Marques da Silva, [johnny-marques](https://github.com/johnny-marques)
 - Olivia Villegas Garcia, [oliviavillegas](https://github.com/oliviavillegas)
 
-# Execução do Projeto
+<p align="center">
+  <img src= "https://github.com/guilhermemcr1/pi-senac-grupo10/assets/44147193/0404d674-46dd-4e62-a41f-8bed635791ad">
+</p>
+
+<h1 align="center"> 
+   Aplicativo Financeiro Web FinAI 
+</h1>
+
+# Prova de Conceito
+<p> Notificação de Gastos, quando o usuário estiver se aproximando dos limites de gastos </p>
+<p> Relatório de gastos detalhado </p>
+<p> AI com educação financeira </p>
+
+# Ambiente de Desenvolvimento
 ## Banco de Dados
-## Servidor PHP
-## Servidor WEB
+Desenvolvido com MySQL Workbench.
+## Backend
+Desenvolvido com PHP.
+## Frontend
+Desenvolvido com HTML, CSS e JavaScript.
+
+# Execução do Projeto
+Projeto instalado em servidor de hospdagem da ValueHost.
+<p> Acessivel em https://galarca.site/pi-senac/view/ </p>
 
 # Exemplo de Uso e Funcionalidades
 ## Página principal do site (Home)
