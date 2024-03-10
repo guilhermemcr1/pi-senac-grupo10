@@ -1,19 +1,25 @@
-# Índice 
+# Índice
 * [Detalhes do Projeto](#detalhes-do-projeto)
-* [Badges](#badges)
-* [Índice](#índice)
+* [Integrantes](#integrantes)
 
+<p align="center">
+  <img src= "https://github.com/guilhermemcr1/pi-senac-grupo10/assets/44147193/0404d674-46dd-4e62-a41f-8bed635791ad">
+</p>
 
-<div align="center"> ![logofinAI](https://github.com/guilhermemcr1/pi-senac-grupo10/assets/img/logofinAI.png) </div>
-<h1 align="center">   Aplicativo financeiro Web FinAI </h1>
+<h1 align="center"> 
+   Aplicativo Financeiro Web FinAI 
+</h1>
 
 
 # Detalhes do Projeto
- * Curso: Analise e Desenvolvimento de Sistemas
- * Projeto Integrador: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web.
  * Instituição:  Centro Universitrário SENAC – Santo Amaro.
+ * Curso: Analise e Desenvolvimento de Sistemas
+ * Ano: 2024
+ * Disciplina: Projeto Integrador
+ * Tema: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web.
+ * Grupo: 10
    
-# Integrantes do Grupo 10
+# Integrantes
 - Clei Lisboa Santos, [CleiL](https://github.com/CleiL)
 - Daniel Siman Oliveira, [dsimanoliveira](https://github.com/dsimanoliveira)
 - Guilherme Galarca da Costa, [guilhermemcr1](https://github.com/guilhermemcr1)
