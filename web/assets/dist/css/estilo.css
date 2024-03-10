@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #141226;
+}
+
+.navbar {
+  height: 70px;
+  background-color: #141226;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  flex: 20%;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  float: left; /* Alinha o logo à esquerda */
+  margin-right: 10px; /* Adicionei um espaçamento entre o logo e o título */
+}
+
+.logo h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+}
+
+.menu {
+  flex: 70%;
+  text-align: right;
+  padding: 20px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+}
+
+.menu a:hover {
+  color: #42f07c;
+  border-top: 4px solid #42f07c;
+}
+
+#btn-login {
+  width: 100%;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: #141226;
+  background: #42ec7bc9;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+#btn-login:hover {
+  border: none;
+  background-color: #ffffff;
+}
+
+.hero-container {
+  background-color: #141226;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: auto; /* Define uma largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.hero-left {
+  flex: 1;
+
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-left h2 {
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-left p {
+  color: rgb(255, 255, 255);
+}
+
+.btn-contact {
+  display: inline-block;
+  background-color: #42f07c;
+  padding: 20px;
+  color: #141226;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-contact:hover {
+  background-color: #ffffff;
+}
+.hero-right {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-right img {
+  width: 36vw;
+}
+
+section {
+  display: inline-block;
+  margin-top: 80px;
+  border: 1px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  padding: 5%;
+  text-align: center;
+  width: 90%;
+}
+
+.section h2 {
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: #42f07c;
+}
+
+.servicos {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.card {
+  display: inline-block;
+}
