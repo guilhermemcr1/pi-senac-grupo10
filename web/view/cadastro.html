@@ -21,9 +21,9 @@
     <div class="card-body">
       <p class="login-box-msg">Cadastrar novo usuário</p>
 
-      <form action="../../index.html" method="post">
+      <form action="../assets/dist/functions/cadastrar_usuario.php" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Nome Completo">
+          <input type="text" class="form-control" name="nome" placeholder="Nome Completo">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" name="email" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -39,7 +39,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="CPF">
+          <input type="text" class="form-control" name="cpf" placeholder="CPF">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-id-card"></span>
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="date" class="form-control" placeholder="Data de nascimento">
+          <input type="date" class="form-control" name="datanasc" placeholder="Data de nascimento">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-birthday-cake"></span>
@@ -55,15 +55,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Senha">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Digite novamente a senha">
+          <input type="password" class="form-control" name="senha" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
