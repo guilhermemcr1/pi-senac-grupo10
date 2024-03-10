@@ -1,6 +1,8 @@
 # Índice
 * [Detalhes do Projeto](#detalhes-do-projeto)
 * [Integrantes](#integrantes)
+* [Execução do Projeto](#execução-do-projeto)
+* [Exemplo de Uso](#exemplo-de-uso)
 
 <p align="center">
   <img src= "https://github.com/guilhermemcr1/pi-senac-grupo10/assets/44147193/0404d674-46dd-4e62-a41f-8bed635791ad">
@@ -16,7 +18,7 @@
  * Curso: Analise e Desenvolvimento de Sistemas
  * Ano: 2024
  * Disciplina: Projeto Integrador
- * Tema: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web.
+ * Tema: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web
  * Grupo: 10
    
 # Integrantes
@@ -26,5 +28,13 @@
 - Johnny Marques da Silva, [johnny-marques](https://github.com/johnny-marques)
 - Olivia Villegas Garcia, [oliviavillegas](https://github.com/oliviavillegas)
 
+# Execução do Projeto
+## Banco de Dados
+## Servidor PHP
+## Servidor WEB
+
+# Exemplo de Uso
+## Cadastrar novo usuário
+## Login
 
 
