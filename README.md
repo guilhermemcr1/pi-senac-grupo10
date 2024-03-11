@@ -4,6 +4,7 @@
 * [Prova de Conceito](#prova-de-conceito)
 * [Ambiente de Desenvolvimento](#ambiente-de-desenvolvimento)
 * [Execução do Projeto](#execução-do-projeto)
+* [Publicação do Projeto](#publicação-do-projeto)
 * [Exemplo de Uso e Funcionalidades](#exemplo-de-uso-e-funcionalidades)
 
 # Detalhes do Projeto
@@ -34,17 +35,13 @@
 
 # Ambiente de Desenvolvimento
 ## Banco de Dados
-Desenvolvido com MySQL Workbench.
+Desenvolvido com MySQL.
 ## Backend
 Desenvolvido com PHP.
 ## Frontend
 Desenvolvido com HTML, CSS e JavaScript.
 
 # Execução do Projeto
-Projeto instalado em servidor de hospdagem da ValueHost.
-<p> Acessivel em https://galarca.site/pi-senac/view/ </p>
-
-# Executar o projeto de forma local
 ## Requisitos
 
 1. Servidor com Stack LAMPP.
@@ -56,8 +53,10 @@ Projeto instalado em servidor de hospdagem da ValueHost.
 3. Importar o arquivo SQL que está na pasta "DB" no seu banco de dados previamente criado.
 4. Editar o arquivo funcoes.php na pasta assets/disc/functions, inserindo os dados do seu banco.
 5. Executar o arquivo a partir da index.html web/view/index.html.
-<p> Acessivel em https://galarca.site/pi-senac/view/ </p>
 
+# Publicação do Projeto
+Projeto instalado em servidor de hospdagem da ValueHost.
+<p> Acessivel em https://galarca.site/pi-senac/view/ </p>
 
 # Exemplo de Uso e Funcionalidades
 ## Página principal do site (Home)
