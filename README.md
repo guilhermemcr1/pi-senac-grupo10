@@ -30,7 +30,7 @@
 </h1>
 
 # Prova de Conceito
-<p> Relatório de gastos detalhado </p>
+<p> Relatório de despesas </p>
 
 # Ambiente de Desenvolvimento
 ## Banco de Dados
