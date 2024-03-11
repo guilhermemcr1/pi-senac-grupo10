@@ -30,9 +30,7 @@
 </h1>
 
 # Prova de Conceito
-<p> Notificação de Gastos, quando o usuário estiver se aproximando dos limites de gastos </p>
 <p> Relatório de gastos detalhado </p>
-<p> AI com educação financeira </p>
 
 # Ambiente de Desenvolvimento
 ## Banco de Dados
