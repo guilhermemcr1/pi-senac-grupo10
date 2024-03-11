@@ -44,6 +44,21 @@ Desenvolvido com HTML, CSS e JavaScript.
 Projeto instalado em servidor de hospdagem da ValueHost.
 <p> Acessivel em https://galarca.site/pi-senac/view/ </p>
 
+# Executar o projeto de forma local
+## Requisitos
+
+1. Servidor com Stack LAMPP.
+2. Estar executando PHP 7.4 no seu servidor.
+
+## Passo a passo
+1. Realizar o download dos arquivos do Github.
+2. Importar os arquivos na pasta de um servidor com stack [LAMP](https://aws.amazon.com/pt/what-is/lamp-stack/)
+3. Importar o arquivo SQL que está na pasta "DB" no seu banco de dados previamente criado.
+4. Editar o arquivo funcoes.php na pasta assets/disc/functions, inserindo os dados do seu banco.
+5. Executar o arquivo a partir da index.html web/view/index.html.
+<p> Acessivel em https://galarca.site/pi-senac/view/ </p>
+
+
 # Exemplo de Uso e Funcionalidades
 ## Página principal do site (Home)
 
