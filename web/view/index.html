@@ -32,19 +32,35 @@
     <title>Inicio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="../assets/dist/img/logomini.png" alt="Home" />
-        <h1>FinAI | Home Page</h1>
-      </div>
-
-      <div class="menu">
-        <a href="#">Início</a>
-        <a href="#">FAQ</a>
-        <a href="cadastro.html">Cadastre-se</a>
-        <a id="btn-login" href="login.html">Login</a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../assets/dist/img/logomini.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" />
+          <span class="ms-2 text-white">FinIA</span>
+        </a>
+        
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="cadastro.html">Cadastre-se</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+    
 
     <header class="hero-container">
       <div class="hero-content">
@@ -102,5 +118,7 @@
         </div>
       </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
