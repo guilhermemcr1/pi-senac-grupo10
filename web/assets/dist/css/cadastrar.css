@@ -69,14 +69,14 @@ body * {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 8px solid red;
+  /* border: 8px solid red; */
   flex-grow: 1; /* Faz o main-login ocupar o espaço disponível */
 }
 .left-login {
   flex-direction: column;
   width: auto;
   height: auto;
-  border: 8px solid rgb(220, 245, 225);
+  /* border: 8px solid rgb(220, 245, 225); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ body * {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 8px solid greenyellow;
+  /* border: 8px solid greenyellow; */
 }
 
 .right-login > h1 {
